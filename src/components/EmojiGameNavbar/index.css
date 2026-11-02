@@ -1,0 +1,6 @@
+.emoji-nav-bar { background-color: #ffffff1a; border-bottom: 2px solid #ffffff33; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+.nav-branding { display: flex; align-items: center; }
+.nav-logo { width: 40px; height: 40px; margin-right: 12px; }
+.nav-title { color: #ffffff; font-family: 'Roboto'; font-size: 22px; margin: 0; }
+.scores-display-zone { display: flex; }
+.score-metric { color: #ffffff; font-family: 'Roboto'; font-size: 18px; font-weight: 500; margin: 0 15px; }

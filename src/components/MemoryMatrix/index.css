@@ -1,0 +1,6 @@
+.matrix-bg { min-height: 100vh; background-color: #1a1a1a; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+.matrix-heading { color: #ffffff; font-family: 'Roboto'; font-size: 28px; margin-bottom: 40px; }
+.matrix-grid-box { display: grid; gap: 8px; width: 100%; max-width: 400px; aspect-ratio: 1; }
+.matrix-cell { background-color: #333333; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.15s; }
+.matrix-cell.highlighted { background-color: #4caf50; }
+.matrix-cell.active { background-color: #2196f3; }

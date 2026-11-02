@@ -1,0 +1,6 @@
+.rules-overlay-bg { display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+.rules-card-box { background-color: #263b4e; border-radius: 12px; padding: 30px; max-width: 500px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+.rules-main-title { color: #ffffff; font-family: 'Roboto'; font-size: 26px; margin-bottom: 20px; border-bottom: 2px solid #ffffff1a; padding-bottom: 10px; }
+.rules-bullet-list { color: #cbd5e1; font-family: 'Roboto'; line-height: 1.6; font-size: 16px; margin-left: 20px; margin-bottom: 30px; }
+.rules-bullet-list li { margin-bottom: 10px; }
+.start-game-trigger { background-color: #38bdf8; color: #ffffff; border: none; border-radius: 6px; padding: 12px 24px; font-family: 'Roboto'; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }

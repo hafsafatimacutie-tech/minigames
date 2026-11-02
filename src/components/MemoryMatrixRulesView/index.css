@@ -1,0 +1,6 @@
+.matrix-rules-bg { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #1a1a1a; padding: 20px; }
+.matrix-rules-card { background-color: #2a2a2a; border-radius: 12px; padding: 40px; max-width: 500px; width: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.5); text-align: center; }
+.matrix-rules-title { color: #ffffff; font-family: 'Roboto'; font-size: 28px; margin-bottom: 25px; }
+.matrix-rules-list { text-align: left; color: #cccccc; font-family: 'Roboto'; font-size: 16px; line-height: 1.6; margin-left: 20px; margin-bottom: 35px; }
+.matrix-rules-list li { margin-bottom: 12px; }
+.matrix-start-btn { background-color: #4caf50; color: #ffffff; border: none; border-radius: 6px; padding: 12px 30px; font-family: 'Roboto'; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; }

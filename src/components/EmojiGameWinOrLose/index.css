@@ -1,0 +1,8 @@
+.status-panel-container { background-color: #ffffff1a; border-radius: 15px; padding: 40px; display: flex; justify-content: space-between; align-items: center; width: 80%; max-width: 650px; margin-top: 50px; }
+.text-feedback-side { display: flex; flex-direction: column; align-items: flex-start; }
+.status-heading { color: #ffffff; font-family: 'Roboto'; font-size: 38px; margin: 0 0 10px 0; }
+.status-lbl { color: #cbd5e1; font-family: 'Roboto'; font-size: 18px; margin: 10px 0; }
+.status-score-val { color: #38bdf8; font-family: 'Roboto'; font-size: 46px; font-weight: bold; margin: 0 0 20px 0; }
+.retry-btn { background-color: #facc15; color: #334155; border: none; border-radius: 8px; padding: 12px 24px; font-family: 'Roboto'; font-weight: bold; cursor: pointer; }
+.graphic-side { width: 220px; }
+.status-img { width: 100%; object-fit: contain; }

@@ -1,0 +1,3 @@
+.emoji-game-bg { min-height: 100vh; background-image: linear-gradient(to right, #3b065d, #0f044c); display: flex; flex-direction: column; align-items: center; }
+.emoji-content-body { flex-grow: 1; display: flex; justify-content: center; align-items: flex-start; width: 100%; padding: 30px 20px; }
+.emojis-grid-view { display: flex; flex-wrap: wrap; justify-content: center; max-width: 600px; padding: 0; margin: 0; }

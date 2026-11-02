@@ -1,0 +1,6 @@
+.cf-rules-bg { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #0b0c10; padding: 20px; }
+.cf-rules-card { background-color: #1f2833; border-radius: 12px; padding: 40px; max-width: 450px; width: 100%; text-align: center; }
+.cf-rules-title { color: #66fcf1; font-family: 'Roboto'; font-size: 28px; margin-bottom: 20px; }
+.cf-rules-list { text-align: left; color: #c5a059; font-family: 'Roboto'; font-size: 16px; line-height: 1.6; margin-left: 20px; margin-bottom: 30px; }
+.cf-rules-list li { margin-bottom: 10px; color: #c5a059; }
+.cf-start-btn { background-color: #45f3ff; color: #0b0c10; border: none; border-radius: 6px; padding: 12px 24px; font-family: 'Roboto'; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }

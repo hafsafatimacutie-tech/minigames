@@ -1,0 +1,70 @@
+.cf-game-bg {
+  min-height: 100vh;
+  background-color: #0b0c10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+}
+.cf-stats-header {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #1f2833;
+  padding-bottom: 10px;
+}
+.cf-game-title {
+  color: #66fcf1;
+  font-family: 'Roboto';
+  font-size: 24px;
+  margin: 0;
+}
+.cf-counter-lbl {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.cf-grid-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.cf-grid-item {
+  margin: 8px;
+}
+.cf-card-element {
+  width: 100px;
+  height: 100px;
+  background-color: #1f2833;
+  border: 2px solid #66fcf1;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.cf-card-element.flipped {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.cf-card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.cf-card-back {
+  color: #66fcf1;
+  font-size: 32px;
+  font-weight: bold;
+}
