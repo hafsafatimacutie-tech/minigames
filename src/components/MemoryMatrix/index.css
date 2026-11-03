@@ -1,6 +1,179 @@
-.matrix-bg { min-height: 100vh; background-color: #1a1a1a; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
-.matrix-heading { color: #ffffff; font-family: 'Roboto'; font-size: 28px; margin-bottom: 40px; }
-.matrix-grid-box { display: grid; gap: 8px; width: 100%; max-width: 400px; aspect-ratio: 1; }
-.matrix-cell { background-color: #333333; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.15s; }
-.matrix-cell.highlighted { background-color: #4caf50; }
-.matrix-cell.active { background-color: #2196f3; }
+.mm-game-play-container {
+  min-height: 100vh;
+  background-color: #1a202c;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.mm-buttons-conatiner {
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mm-back-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 20px;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mm-rules-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.mm-custom-modal {
+  width: 80%;
+  height: 560px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-custom-modal {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+  }
+}
+
+.mm-custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mm-rules-modal-list {
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-modal-list {
+    height: auto;
+    flex-wrap: no wrap;
+  }
+}
+
+.mm-rules-modal-rule {
+  color: #475569;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-modal-rule {
+    width: 90%;
+  }
+}
+
+.mm-game-heading {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Bree Serif';
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.mm-level-heading {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.mm-boxes-container {
+  list-style-type: none;
+  padding: 0;
+  width: 85%;
+  display: grid;
+  grid-gap: 10px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+@media screen and (min-width:768px){
+  .mm-boxes-container{
+    max-width: 600px;
+  }
+}
+
+.mm-box {
+  aspect-ratio: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mm-wrong-box {
+  background-color: #ef4444; /* Red for wrong selection */
+  animation: shake 0.5s;
+}
+
+.mm-highlighted-box {
+  background-color: #3b82f6;
+}
+
+.mm-result-container {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mm-result-content {
+  text-align: center;
+}
+
+.mm-result-text {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.mm-progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.mm-progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s;
+}

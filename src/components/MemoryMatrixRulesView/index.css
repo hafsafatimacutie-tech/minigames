@@ -1,6 +1,86 @@
-.matrix-rules-bg { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #1a1a1a; padding: 20px; }
-.matrix-rules-card { background-color: #2a2a2a; border-radius: 12px; padding: 40px; max-width: 500px; width: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.5); text-align: center; }
-.matrix-rules-title { color: #ffffff; font-family: 'Roboto'; font-size: 28px; margin-bottom: 25px; }
-.matrix-rules-list { text-align: left; color: #cccccc; font-family: 'Roboto'; font-size: 16px; line-height: 1.6; margin-left: 20px; margin-bottom: 35px; }
-.matrix-rules-list li { margin-bottom: 12px; }
-.matrix-start-btn { background-color: #4caf50; color: #ffffff; border: none; border-radius: 6px; padding: 12px 30px; font-family: 'Roboto'; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; }
+.mm-rules-view-container {
+  min-height: 100vh;
+  background-color: #1a202c;
+  padding: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mm-rules-view-responsive-container {
+  width: 85%;
+}
+
+.mm-rules-view-heading-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-view-img {
+    width: 300px;
+  }
+}
+
+.mm-rules-list-heading {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+
+.mm-rules-list {
+  height: 410px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+.mm-rule {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rule {
+    width: 100%;
+  }
+}
+
+.mm-rules-view-start-playing-button {
+  background-color: #467aff;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-view-start-playing-button {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+  }
+}

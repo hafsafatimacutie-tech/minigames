@@ -15,8 +15,8 @@
         "rc-progress": "3.1.4",
         "react": "17.0.1",
         "react-dom": "17.0.1",
-        "react-icons": "^5.7.0",
-        "react-modal": "^3.16.3",
+        "react-icons": "4.3.1",
+        "react-modal": "3.14.3",
         "react-router-dom": "5.3.0",
       },
       "devDependencies": {
@@ -2308,13 +2308,13 @@
 
     "react-error-overlay": ["react-error-overlay@6.1.0", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-error-overlay/-/react-error-overlay-6.1.0.tgz", {}, "sha512-SN/U6Ytxf1QGkw/9ve5Y+NxBbZM6Ht95tuXNMKs8EJyFa/Vy/+Co3stop3KBHARfn/giv+Lj1uUnTfOJ3moFEQ=="],
 
-    "react-icons": ["react-icons@5.7.0", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-icons/-/react-icons-5.7.0.tgz", { "peerDependencies": { "react": "*" } }, "sha512-LBLy340Rzqy6+/yVhZKT3B/QpP1BZaesGqasf09HPOBzRarcDIFH0WwXlXQfE7q7ipxK4MSiC5DIBWURCny6fw=="],
+    "react-icons": ["react-icons@4.3.1", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-icons/-/react-icons-4.3.1.tgz", { "peerDependencies": { "react": "*" } }, "sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ=="],
 
     "react-is": ["react-is@17.0.2", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-is/-/react-is-17.0.2.tgz", {}, "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="],
 
     "react-lifecycles-compat": ["react-lifecycles-compat@3.0.4", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz", {}, "sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA=="],
 
-    "react-modal": ["react-modal@3.16.3", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-modal/-/react-modal-3.16.3.tgz", { "dependencies": { "exenv": "^1.2.0", "prop-types": "^15.7.2", "react-lifecycles-compat": "^3.0.0", "warning": "^4.0.3" }, "peerDependencies": { "react": "^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18 || ^19", "react-dom": "^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18 || ^19" } }, "sha512-yCYRJB5YkeQDQlTt17WGAgFJ7jr2QYcWa1SHqZ3PluDmnKJ/7+tVU+E6uKyZ0nODaeEj+xCpK4LcSnKXLMC0Nw=="],
+    "react-modal": ["react-modal@3.14.3", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-modal/-/react-modal-3.14.3.tgz", { "dependencies": { "exenv": "^1.2.0", "prop-types": "^15.7.2", "react-lifecycles-compat": "^3.0.0", "warning": "^4.0.3" }, "peerDependencies": { "react": "^0.14.0 || ^15.0.0 || ^16 || ^17", "react-dom": "^0.14.0 || ^15.0.0 || ^16 || ^17" } }, "sha512-+C2KODVKyu20zHXPJxfOOcf571L1u/EpFlH+oS/3YDn8rgVE51QZuxuuIwabJ8ZFnOEHaD+r6XNjqwtxZnXO0g=="],
 
     "react-refresh": ["react-refresh@0.8.3", "https://ccbp-ide-drops-110916805156.d.codeartifact.ap-south-1.amazonaws.com/npm/npm-store/react-refresh/-/react-refresh-0.8.3.tgz", {}, "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="],
 

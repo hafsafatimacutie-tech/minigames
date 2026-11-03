@@ -1,18 +1,18 @@
 const choicesList = [
   {
-    id: 'ROCK',
+    id: 'rock',
     imageUrl:
       'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rock-image.png',
   },
   {
-    id: 'PAPER',
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png',
-  },
-  {
-    id: 'SCISSORS',
+    id: 'scissor',
     imageUrl:
       'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/scissor-image.png',
+  },
+  {
+    id: 'paper',
+    imageUrl:
+      'https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png',
   },
 ]
 

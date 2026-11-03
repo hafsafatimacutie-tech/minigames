@@ -1,4 +1,109 @@
-.matrix-result-container { display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #2a2a2a; border-radius: 12px; padding: 40px; max-width: 400px; width: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-.matrix-result-title { color: #ff5252; font-family: 'Roboto'; font-size: 32px; margin-bottom: 15px; }
-.matrix-result-score { color: #ffffff; font-family: 'Roboto'; font-size: 20px; margin-bottom: 30px; }
-.matrix-reset-btn { background-color: #2196f3; color: #ffffff; border: none; border-radius: 6px; padding: 12px 24px; font-family: 'Roboto'; font-weight: bold; cursor: pointer; }
+.mm-result-view-bg {
+  background-color: #1a202c;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progrssbar-emojis-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .progrssbar-emojis-container {
+    width: 85%;
+  }
+}
+
+.progressbar-emoji {
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .progressbar-emoji {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.levels-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+}
+
+@media screen and (max-width: 767px){
+  .levels-container{
+    width: 80%;
+  }
+}
+
+.level-heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: bree serif;
+}
+
+.progress-bar {
+  width: 720px;
+  height: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .progress-bar {
+    width: 85%;
+  }
+}
+
+.filler {
+  background-color: blue;
+  height: 100%;
+}
+
+.congratulations-heading {
+  color: #467aff;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: bree serif;
+}
+
+@media screen and (max-width: 767px) {
+  .congratulations-heading {
+    font-size: 26px;
+  }
+}
+
+.description-heading {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: bree serif;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .description-heading {
+    font-size: 18px;
+  }
+}
+
+.play-again-button {
+  background-color: #467aff;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}

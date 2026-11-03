@@ -1,25 +1,39 @@
 import './index.css'
 
 const EmojiGameWinOrLose = props => {
-  const {isWon, score, onClickPlayAgain} = props
-  const imgUrl = isWon ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png' : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
-  const title = isWon ? 'You Won' : 'You Lose'
-  const scoreLabel = isWon ? 'Best Score' : 'Score'
+  const {currentScore, topScore, isWon, resetGame} = props
+
+  const onClickPlayAgain = () => {
+    resetGame(Math.max(currentScore, topScore))
+  }
 
   return (
-    <div className="status-panel-container">
-      <div className="text-feedback-side">
-        <h1 className="status-heading">{title}</h1>
-        <p className="status-lbl">{scoreLabel}</p>
-        <p className="status-score-val">{score}/12</p>
-        <button type="button" className="retry-btn" onClick={onClickPlayAgain}>
+    <div className="win-or-lose-card">
+      <img
+        className="win-or-lose-img"
+        src={
+          isWon
+            ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png'
+            : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
+        }
+        alt={isWon ? 'won' : 'lose'}
+      />
+      <div className="win-or-lose-card-body">
+        <h1 className="win-or-lose-heading">
+          {isWon ? 'You Won' : 'You Lose'}
+        </h1>
+        <p className="best-score-heading">{isWon ? 'Best Score' : 'Score'}</p>
+        <p className="game-score">{`${currentScore}/12`}</p>
+        <button
+          type="button"
+          className="play-again-button"
+          onClick={onClickPlayAgain}
+        >
           Play Again
         </button>
-      </div>
-      <div className="graphic-side">
-        <img src={imgUrl} alt="win or lose" className="status-img" />
       </div>
     </div>
   )
 }
+
 export default EmojiGameWinOrLose

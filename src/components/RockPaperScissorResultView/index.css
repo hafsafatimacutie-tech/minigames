@@ -1,0 +1,202 @@
+.rps-result-view-container {
+  min-height: 100vh;
+  background-color: #223a5f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rps-result-view-heading {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.rps-game-result-card {
+  width: 700px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-game-result-card {
+    display: none;
+    width: 85%;
+    flex-direction: column;
+  }
+}
+
+.rps-sm-game-result-card {
+  display: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px 0px 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-sm-game-result-card {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rps-sm-img-score-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.game-status-image {
+  width: 110px;
+}
+
+@media screen and (max-width: 767px) {
+  .score-card-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.score-card-text {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.rps-score-container {
+  background-color: white;
+  width: 130px;
+  height: 100px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rps-score-container-heading {
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.rps-score-container-text {
+  color: #223a5f;
+  font-family: 'HK Grotesk';
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.rps-user-choices-container {
+  width: 700px;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-user-choices-container {
+    width: 85%;
+  }
+}
+
+.rps-user-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-name {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.rps-user-choice-img {
+  width: 188px;
+  height: 188px;
+}
+
+@media screen and (max-width: 767px) {
+  .player-name {
+    font-size: 20px;
+  }
+
+  .rps-user-choice-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.rps-user-choices-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.rps-game-status-emoji {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 767px){
+  .rps-game-status-emoji{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.rps-play-again-button {
+  background-color: white;
+  color: #223a5f;
+  font-family: 'Bree Serif';
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.rps-user-resut {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px){
+  .rps-user-resut{
+    font-size: 20px;
+  }
+
+  .rps-play-again-button{
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+  }
+}

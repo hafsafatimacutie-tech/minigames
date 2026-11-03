@@ -1,6 +1,135 @@
-.rules-overlay-bg { display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
-.rules-card-box { background-color: #263b4e; border-radius: 12px; padding: 30px; max-width: 500px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-.rules-main-title { color: #ffffff; font-family: 'Roboto'; font-size: 26px; margin-bottom: 20px; border-bottom: 2px solid #ffffff1a; padding-bottom: 10px; }
-.rules-bullet-list { color: #cbd5e1; font-family: 'Roboto'; line-height: 1.6; font-size: 16px; margin-left: 20px; margin-bottom: 30px; }
-.rules-bullet-list li { margin-bottom: 10px; }
-.start-game-trigger { background-color: #38bdf8; color: #ffffff; border: none; border-radius: 6px; padding: 12px 24px; font-family: 'Roboto'; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
+.emoji-game-rules-view-container {
+  background-image: linear-gradient(#9796f0, #fbc7d4);
+  min-height: 100vh;
+  padding: 30px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-view-responsive-container {
+  width: 85%;
+}
+
+.back-button {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rules-card {
+  width: 1201;
+  height: 776;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border-width: 3px;
+
+  background: #ffffff33;
+  border: 3px solid #ffffff30;
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .rules-card {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+.game-image-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-view-game-image {
+  width: 450px;
+  height: 380px;
+}
+
+.emoji-game-title {
+  font-size: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .rules-view-game-image {
+    width: 250px;
+    height: 200px;
+  }
+
+  .emoji-game-title {
+    font-size: 30px;
+  }
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-heading {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 32px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.rules-list {
+  color: #475569;
+  margin: 0;
+}
+
+.rule-text {
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .rules-heading {
+    font-size: 24px;
+  }
+
+  .rules-list {
+    padding: 10px;
+  }
+
+  .rule-text {
+    font-size: 16px;
+  }
+}
+
+.start-playing-button {
+  background-color: #334155;
+  color: white;
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .start-playing-button {
+    font-size: 12px;
+    margin-top: 0;
+  }
+}

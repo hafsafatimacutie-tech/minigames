@@ -1,70 +1,250 @@
-.cf-game-bg {
+.cfmg-game-play-container {
   min-height: 100vh;
-  background-color: #0b0c10;
+  padding: 20px 0px;
+  background-image: url('https://res.cloudinary.com/dzbvm25qt/image/upload/v1744028256/44350_1_xnkb5t.png');
+  background-size: cover;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 15px;
+  /* justify-content: center; */
 }
-.cf-stats-header {
-  width: 100%;
-  max-width: 500px;
+
+.cfmg-buttons-conatiner {
+  width: 80%;
+  /* margin-top: 30px; */
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #1f2833;
-  padding-bottom: 10px;
+  justify-content: space-between;
 }
-.cf-game-title {
-  color: #66fcf1;
-  font-family: 'Roboto';
-  font-size: 24px;
-  margin: 0;
-}
-.cf-counter-lbl {
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-.cf-grid-layout {
+
+.cfmg-back-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 20px;
+  border: none;
+  outline: none;
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 500px;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
+  align-items: center;
+  gap: 5px;
 }
-.cf-grid-item {
-  margin: 8px;
-}
-.cf-card-element {
-  width: 100px;
-  height: 100px;
-  background-color: #1f2833;
-  border: 2px solid #66fcf1;
+
+.cfmg-rules-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 2px solid white;
   border-radius: 8px;
+}
+
+.cfmg-custom-modal {
+  width: 80%;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.cfmg-custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cfmg-rules-modal-list {
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cfmg-rules-modal-rule {
+  color: #475569;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-custom-modal {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+  }
+
+  .cfmg-rules-modal-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .cfmg-rules-modal-rule {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.cfmg-game-heading {
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+  font-family: 'Bree Serif';
+  text-align: center;
+  word-spacing: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-game-heading {
+    font-size: 24px;
+  }
+}
+
+.cfmg-game-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cfmg-stats {
+  display: flex;
+  gap: 100px;
+}
+
+.cfmg-sm-stats {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-stats {
+    display: none;
+  }
+
+  .cfmg-sm-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+
+  .cfmg-sm-count-score-stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cfmg-flip-count,
+.cfmg-score,
+.cfmg-timer {
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-timer {
+    font-size: 24px;
+  }
+
+  .cfmg-flip-count,
+  .cfmg-score {
+    font-size: 20px;
+  }
+}
+
+/* Cards Grid Layout */
+.cfmg-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(60px, 1fr));
+  gap: 15px;
+  width: 85%;
+  max-width: 700px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 20px;
+  background-color: #154315;
+  border: 2px solid #409c40;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-cards-container {
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 5px;
+    padding: 10px;
+  }
+}
+
+.cfmg-card-item {
+  aspect-ratio: 1/1; /* Ensures square cards */
+}
+
+.cfmg-card-button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #7cbd91;
+  border-radius: 12px;
+  outline: none;
+  overflow: hidden;
+  background-color: white;
   cursor: pointer;
   padding: 0;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-card-button {
+    border-radius: 8px;
+  }
+}
+
+.cfmg-card-button.flipped {
+  transform: rotateY(180deg);
+}
+
+.cfmg-card-back {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-.cf-card-element.flipped {
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-.cf-card-image {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-.cf-card-back {
-  color: #66fcf1;
-  font-size: 32px;
+  justify-content: center;
+  font-size: 24px;
   font-weight: bold;
+  color: white;
+  background-color: #5e9b72;
+}
+
+.cfmg-card-image {
+  width: 85%;
+  height: 80%;
+  border-radius: 8px;
+  transform: rotateY(180deg);
 }
