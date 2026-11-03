@@ -34,7 +34,7 @@ class CardFlipMemoryGame extends Component {
     if (
       flippedIndices.length === 2 ||
       flippedIndices.includes(idx) ||
-      matchedPairs.includes(cards[idx].id)
+      matchedPairs.includes(cards[idx].name)
     )
       return
 
@@ -44,8 +44,8 @@ class CardFlipMemoryGame extends Component {
       () => {
         if (nextFlips.length === 2) {
           const [first, second] = nextFlips
-          if (cards[first].id === cards[second].id) {
-            const updatedPairs = [...matchedPairs, cards[first].id]
+          if (cards[first].name === cards[second].name) {
+            const updatedPairs = [...matchedPairs, cards[first].name]
             this.setState(
               {matchedPairs: updatedPairs, flippedIndices: []},
               () => {
@@ -83,7 +83,7 @@ class CardFlipMemoryGame extends Component {
         <ul className="cf-grid-layout">
           {cards.map((card, index) => {
             const isFlipped =
-              flippedIndices.includes(index) || matchedPairs.includes(card.id)
+              flippedIndices.includes(index) || matchedPairs.includes(card.name)
             return (
               <li key={card.uniqueId} className="cf-grid-item">
                 <button
@@ -93,7 +93,7 @@ class CardFlipMemoryGame extends Component {
                 >
                   {isFlipped ? (
                     <img
-                      src={card.imageUrl}
+                      src={card.image}
                       alt={card.name}
                       className="cf-card-image"
                     />

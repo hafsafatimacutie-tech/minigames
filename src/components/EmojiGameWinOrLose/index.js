@@ -2,7 +2,7 @@ import './index.css'
 
 const EmojiGameWinOrLose = props => {
   const {isWon, score, onClickPlayAgain} = props
-  const imgUrl = isWon ? 'https://ccbp.in' : 'https://ccbp.in'
+  const imgUrl = isWon ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png' : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
   const title = isWon ? 'You Won' : 'You Lose'
   const scoreLabel = isWon ? 'Best Score' : 'Score'
 

@@ -1,6 +1,5 @@
 import {Component} from 'react'
-// eslint-disable-next-line import/no-unresolved
-import Popup from 'reactjs-popup'
+import ReactModal from 'react-modal'
 import {RiCloseLine} from 'react-icons/ri'
 import choicesList from '../../resources/choicesList'
 import './index.css'
@@ -12,6 +11,7 @@ class RockPaperScissor extends Component {
     userChoice: '',
     opponentChoice: '',
     gameResult: '',
+    isModalOpen: false,
   }
 
   onSelectWeapon = id => {
@@ -63,6 +63,10 @@ class RockPaperScissor extends Component {
       gameResult: '',
     })
 
+  openModal = () => this.setState({isModalOpen: true})
+
+  closeModal = () => this.setState({isModalOpen: false})
+
   renderPlayStage = () => (
     <ul className="weapons-list">
       {choicesList.map(each => (
@@ -110,7 +114,7 @@ class RockPaperScissor extends Component {
   }
 
   render() {
-    const {score, gameStage} = this.state
+    const {score, gameStage, isModalOpen} = this.state
     return (
       <div className="rps-bg-container">
         <div className="scoreboard-header">
@@ -132,34 +136,37 @@ class RockPaperScissor extends Component {
             : this.renderResultStage()}
         </div>
         <div className="rules-popup-align">
-          <Popup
-            modal
-            trigger={
-              <button type="button" className="rules-btn">
-                Rules
-              </button>
-            }
+          <button
+            type="button"
+            className="rules-btn"
+            onClick={this.openModal}
           >
-            {close => (
-              <div className="popup-body">
-                <button
-                  type="button"
-                  className="close-popup-btn"
-                  onClick={close}
-                >
-                  <RiCloseLine size={24} />
-                </button>
-                <img
-                  src="https://ccbp.in"
-                  alt="rules"
-                  className="rules-display-img"
-                />
-              </div>
-            )}
-          </Popup>
+            Rules
+          </button>
+          <ReactModal
+            isOpen={isModalOpen}
+            onRequestClose={this.closeModal}
+            ariaHideApp={false}
+          >
+            <div className="popup-body">
+              <button
+                type="button"
+                className="close-popup-btn"
+                onClick={this.closeModal}
+              >
+                <RiCloseLine size={24} />
+              </button>
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rules-image.png"
+                alt="rules"
+                className="rules-display-img"
+              />
+            </div>
+          </ReactModal>
         </div>
       </div>
     )
   }
 }
+
 export default RockPaperScissor

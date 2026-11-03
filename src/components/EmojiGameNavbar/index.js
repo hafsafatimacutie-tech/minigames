@@ -5,7 +5,7 @@ const EmojiGameNavbar = props => {
   return (
     <nav className="emoji-nav-bar">
       <div className="nav-branding">
-        <img src="https://ccbp.in" alt="emoji logo" className="nav-logo" />
+        <img src="https://res.cloudinary.com/dzbvm25qt/image/upload/v1743179615/wink_1_uzkb5v.png" alt="emoji logo" className="nav-logo" />
         <h1 className="nav-title">Emoji Game</h1>
       </div>
       {isGameInProgress && (

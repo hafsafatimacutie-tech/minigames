@@ -46,12 +46,8 @@ class EmojiGame extends Component {
   getShuffledEmojisList = () => [...emojisList].sort(() => Math.random() - 0.5)
 
   render() {
-    const {
-      clickedEmojisList,
-      topScore,
-      isGameInProgress,
-      showRules,
-    } = this.state
+    const {clickedEmojisList, topScore, isGameInProgress, showRules} =
+      this.state
 
     if (showRules) {
       return <EmojiGameRulesView startTheGame={this.startTheGame} />
