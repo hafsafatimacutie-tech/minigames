@@ -127,7 +127,9 @@ class RockPaperScissor extends Component {
           </div>
         </div>
         <div className="game-interactive-zone">
-          {gameStage === 'PLAY' ? this.renderPlayStage() : this.renderResultStage()}
+          {gameStage === 'PLAY'
+            ? this.renderPlayStage()
+            : this.renderResultStage()}
         </div>
         <div className="rules-popup-align">
           <Popup

@@ -6,11 +6,7 @@ const MemoryMatrixResultView = props => {
     <div className="matrix-result-container">
       <h1 className="matrix-result-title">Game Over!</h1>
       <p className="matrix-result-score">You reached Level {level}</p>
-      <button
-        type="button"
-        className="matrix-reset-btn"
-        onClick={resetGame}
-      >
+      <button type="button" className="matrix-reset-btn" onClick={resetGame}>
         Try Again
       </button>
     </div>
