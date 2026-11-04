@@ -8,8 +8,6 @@ const RockPaperScissorResultView = props => {
   const userChoiceObj = choicesList.find(choice => choice.id === userChoice)
   const gameChoiceObj = choicesList.find(choice => choice.id === gameChoice)
 
-  console.log(userChoiceObj)
-
   let gameStatusImage = ''
   let gameStatusEmoji = ''
 
@@ -46,11 +44,7 @@ const RockPaperScissorResultView = props => {
     <div className="rps-result-view-container">
       <h1 className="rps-result-view-heading">ROCK PAPER SCISSOR</h1>
       <div className="rps-game-result-card">
-        <span className="score-card-text-container">
-          <h2 className="score-card-text">Rock</h2>
-          <h2 className="score-card-text">Paper</h2>
-          <h2 className="score-card-text">Scissor</h2>
-        </span>
+        <h1 className="score-card-text">Rock Paper Scissor</h1>
         <img
           className="game-status-image"
           src={gameStatusImage}
@@ -59,24 +53,6 @@ const RockPaperScissorResultView = props => {
         <div className="rps-score-container">
           <p className="rps-score-container-heading">Score</p>
           <p className="rps-score-container-text">{score}</p>
-        </div>
-      </div>
-      <div className="rps-sm-game-result-card">
-        <span className="score-card-text-container">
-          <h2 className="score-card-text">Rock</h2>
-          <h2 className="score-card-text">Paper</h2>
-          <h2 className="score-card-text">Scissor</h2>
-        </span>
-        <div className="rps-sm-img-score-container">
-          <img
-            className="game-status-image"
-            src={gameStatusImage}
-            alt={gameStatusImageAlt}
-          />
-          <div className="rps-score-container">
-            <p className="rps-score-container-heading">Score</p>
-            <p className="rps-score-container-text">{score}</p>
-          </div>
         </div>
       </div>
       <div className="rps-user-choices-container">

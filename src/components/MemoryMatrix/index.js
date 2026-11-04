@@ -119,12 +119,9 @@ class MemoryMatrix extends Component {
         this.moveToNextLevel()
       }
     } else {
-      // First show wrong selection
-      this.setState({wrongSelection: boxId}, () => {
-        // Then after a brief delay, show results
-        setTimeout(() => {
-          this.setState({gameStatus: gameStatusConstants.end})
-        }, 500) // 0.5 second delay to show the red box
+      this.setState({
+        wrongSelection: boxId,
+        gameStatus: gameStatusConstants.end,
       })
     }
   }

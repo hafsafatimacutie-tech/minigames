@@ -322,13 +322,6 @@ class CardFlipMemoryGame extends Component {
             <p className="cfmg-timer">{this.formatTime(timeLeft)}</p>
             <p className="cfmg-score">Score - {score}</p>
           </div>
-          <div className="cfmg-sm-stats">
-            <p className="cfmg-timer">{this.formatTime(timeLeft)}</p>
-            <div className="cfmg-sm-count-score-stats">
-              <p className="cfmg-flip-count">Card flip count - {flipCount}</p>
-              <p className="cfmg-score">Score - {score}</p>
-            </div>
-          </div>
         </div>
         <ul className="cfmg-cards-container">{this.renderCards()}</ul>
       </div>
